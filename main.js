@@ -198,6 +198,6 @@ const SinglePlayer = (function () {
     setMotion: _setMotion,
     setHealth: _setHealth,
     attack: _attack,
-    teleport: teleport
+    teleport: _teleport
   };
 })
