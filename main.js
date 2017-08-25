@@ -158,7 +158,7 @@ const SinglePlayer = (function () {
     return new Vector3(this.x, this.y, this.z);
   }
 
-  function getHealth() {
+  function _getHealth() {
     return Entity.getHealth(this._getEntity());
   }
 
@@ -169,9 +169,19 @@ const SinglePlayer = (function () {
     return vec;
   }
 
-  function setHealth(amount) {
+  function _setHealth(amount) {
     Player.setHealth(amount);
     return this._getEntity();
+  }
+
+  function _attack(amount) {
+    this._setHealth(this._getEntity().this._getHealth() - amount);
+  }
+
+  function _teleport(pos, yaw = getYaw(), pitch = getPitch()) {
+    setPosition(this._getEntity(), pos.x, pos.y, pos, z);
+    Entity.setRot(this._getEntity(), yaw, pitch)
+    return;
   }
 
   return {
@@ -185,7 +195,9 @@ const SinglePlayer = (function () {
     isSpectator: _isSpectator,
     getVector3: _getVector3,
     getHealth: _getHealth,
+    setMotion: _setMotion,
     setHealth: _setHealth,
-    setMotion: _setMotion
+    attack: _attack,
+    teleport: teleport
   };
 })
