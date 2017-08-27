@@ -216,9 +216,4 @@ const SinglePlayer = (function () {
     teleport: _teleport
   };
 })
-
-function useItem(x, y, z, itemId, blockId, side, itemDamage, blockDamage) {
-  new SinglePlayer().teleport(new Vector3(x, y + 10, z), 0, 0);
-}
-
 //End
