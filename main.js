@@ -13,10 +13,6 @@
 SH(えすえいち):
 GitHub:
 http://github.com/SH-OToS/
-
-sanaehururu1200:
-Twitter:http://twitter.com/OToS_SH/
-Google+:https://plus.google.com/u/0/+%E3%81%9F%E3%81%91%E3%81%AF%E3%82%8B0221/
 */
 
 /*
