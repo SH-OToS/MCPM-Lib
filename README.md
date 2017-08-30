@@ -1,16 +1,15 @@
 # MCPM-Lib    
-BlockLauncherScriptModでVector3やPlayerをPocketMine風に扱えるようにするライブラリ
+BlockLauncherScriptModでVector3やPlayerをPocketMine風に扱えるようにする物です。
+MITライセンスなのでModに組み込んで使用できます。
+
+PocketMine-MPのドキュメントを参考にしてください。
 
 ## MCPM 0.1 〜
 ### Vector3
   - getX  
-    Vector3のX座標を返す
-  - getY  
-    Vector3のY座標を返す
+  - getY  
   - getZ  
-    Vector3のZ座標を返す
   - multiply
-    X,Y,Zの値が倍になったものを返す
   - divide
   - ceil
   - floor
